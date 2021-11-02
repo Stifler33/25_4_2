@@ -5,6 +5,7 @@ void write(int *incoming){
         *(buffer + i) = *(incoming + i);
     }
 }
+//read in array
 void read(int *ptr){
     for (int i = 0; i < 8; i++){
         ptr[i] = *(buffer + i);

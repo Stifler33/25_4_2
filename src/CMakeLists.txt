@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.20)
+target_sources(PC PUBLIC ram.cpp)
+target_sources(PC PUBLIC kbd.cpp)
+target_sources(PC PUBLIC cpu.cpp)
+target_sources(PC PUBLIC gpu.cpp)

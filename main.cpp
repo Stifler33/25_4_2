@@ -1,13 +1,18 @@
 #include <iostream>
-#include "ram_h.h"
+#include "pc.h"
 
 int main() {
-    int arr[8] = {3,5,9,4,2,1,4,7};
-    write(arr);
-    int Barr[8] = {0};
-    read(Barr);
-    for (int x : Barr){
-        std::cout << x;
+    std::string action;
+    while (action != "exit"){
+        std::cout << "Enter action\n";
+        std::cin >> action;
+        if (action == "input"){
+            input();
+        }else if (action == "sum"){
+            compute();
+        }else if (action == "display"){
+            display();
+        }
     }
     return 0;
 }
