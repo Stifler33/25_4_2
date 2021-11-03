@@ -12,7 +12,11 @@ int main() {
             compute();
         }else if (action == "display"){
             display();
-        }
+        }else if (action == "save"){
+            save();
+        }else if (action == "load"){
+            load();
+        }else std::cout << "no correct action\n";
     }
     return 0;
 }
